@@ -55,6 +55,14 @@ a{
     padding: 10px 40px;
     font-weight: bold;
 }
+
+.bt-violet{
+
+    background-color: #9792E4;
+    color: white;
+}
+
+
 #text-black{
 
     color: black;
@@ -122,6 +130,8 @@ header{
 
 /*Main*/
 
+/*Section info-app*/
+
 .info-app{
 
     width: 80%;
@@ -163,6 +173,80 @@ header{
     font-size: 6rem;
     
 }
+
+/*Section planning*/
+
+
+.planning{
+
+    background-color: #9792E4;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.planning .top{
+
+    padding: 60px 30px;
+    color: white;
+
+}
+
+.planning .top img{
+
+    margin-bottom: 40px;
+}
+
+.planning .top h2{
+
+    font-size: 3rem;
+    margin-bottom: 40px;
+
+}
+
+
+.planning .top p
+{
+
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.planning .bottom{
+
+    
+    background-color: white;
+    margin: 30px;
+    border-radius: 70px;
+}
+
+.planning .bottom h3{
+
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+.planning .bottom p{
+
+    line-height: 2rem;
+    font-weight: bold;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    
+}
+
+#bt-circle {
+
+    
+    border-radius: 50%;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    margin: 20px 50%;
+    }
+
+
 /*Footer*/
 
 /*Responsive*/
