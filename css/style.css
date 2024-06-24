@@ -10,6 +10,12 @@
 
 /*General*/
 
+.container{
+
+    width: 100%;
+    
+}
+
 img{
 
     max-width: 100%;
@@ -79,20 +85,15 @@ a{
 header{
 
     background-color: #0084FD;
-    
+    max-width: 100%;
 }
 
-.container{
-
-    max-width: 576px;
-    
-}
-
-.container .header{
+.header{
 
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
+    padding-right: 20px;
 }
 
 .col.desktop-nav ul{
@@ -133,15 +134,14 @@ header{
 
     border-radius: 20px;
     background-color: #B5DDFF;
-    padding: 30px 20px 0;
-    margin-bottom: 20px;
+    padding: 20px 20px 0;
+    margin-top: 20px;
 
 }
 
 .info-card h3{
 
-    font-size: 1.7rem;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .info-card p{
@@ -160,7 +160,6 @@ header{
 
 .icon-info{
 
-    
     font-size: 6rem;
     
 }
@@ -168,28 +167,76 @@ header{
 
 /*Responsive*/
 
-@media screen and (min-width:576px){
+@media screen and (min-width:576px) {
 
 .container{
 
-    max-width:100%;
+    min-width:100%;
 }
 
-.row{
+.info-app{
 
-    flex-wrap: wrap;
+    display: flex;    
+    
+}
+
+.info-card.big{
+
+    width: calc(((100% / 3) * 2) - 20px);
+    margin-right: 20px;
+    
+
 }
 .info-card.small{
 
-    flex-grow: 1;
+    width: calc((100% / 3) - 20px);
     
 }
-.info-card.big{
+
+.info-card.small:nth-child(4){
+
+    margin: 20px 20px 0;
     
-    flex-grow: 3;
 }
+
+.img-phone{
+
+    margin-left: 20px;
+}
+
 }
 
 @media screen and (min-width:992px) {
+
+    .container{
+
+        min-width:100%;
+    }
+
+    .col.desktop-nav{
+
+        display: block;
+    }
+
+    .col.mobile-nav{
+
+        display: none;
+    }
+
+    .info-card.big{
+
+        display: flex;
+    }
+    
+    .info-card.big .left,
+    .info-card.big .right{
+
+        width: 50%;
+    }
+
+    .img-phone{
+
+        align-self: flex-end;
+    }
     
 }
