@@ -10,11 +10,7 @@
 
 /*General*/
 
-.container{
 
-    width: 100%;
-    
-}
 
 img{
 
@@ -176,23 +172,33 @@ header{
 
 /*Section planning*/
 
+.bg-violet{
 
+    
+    background-color: #9792E4;
+}
 .planning{
 
-    background-color: #9792E4;
+    
     margin-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 .planning .top{
 
-    padding: 60px 30px;
+    padding: 40px 30px;
     color: white;
 
 }
 
 .planning .top img{
 
-    margin-bottom: 40px;
+    margin: 40px auto;
+}
+
+
+.planning .bottom img{
+
+    margin: 40px auto ;
 }
 
 .planning .top h2{
@@ -216,7 +222,8 @@ header{
     
     background-color: white;
     margin: 30px;
-    border-radius: 70px;
+    border-radius: 30px;
+    padding-bottom: 30px;
 }
 
 .planning .bottom h3{
@@ -228,7 +235,6 @@ header{
 .planning .bottom p{
 
     line-height: 2rem;
-    font-weight: bold;
     padding: 20px 20px;
     font-size: 1.2rem;
     
@@ -236,28 +242,30 @@ header{
 
 #bt-circle {
 
+    margin:0 50%;
+    width: 40px;
+    height: 40px;
     
-    border-radius: 50%;
-    color: black;
-    padding: 10px;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    vertical-align: middle;
-    margin: 20px 50%;
     }
 
+#bt-circle a{
 
+    color: black;
+    font-size: 20px;
+    
+}
 /*Footer*/
 
 /*Responsive*/
 
 @media screen and (min-width:576px) {
 
-.container{
+.header,
+.info-app{
 
-    min-width:100%;
+    width: 90%;
+    margin: 0 auto;
 }
-
 .info-app{
 
     display: flex;    
@@ -277,6 +285,24 @@ header{
     
 }
 
+.info-card h3{
+
+    padding-bottom: 20px;
+}
+
+.info-card p{
+
+    padding-bottom: 20px;
+    line-height: 1.5rem;
+    color: grey;
+    font-weight: bold;
+}
+.icon-info{
+
+    font-size: 4rem;
+    
+}
+
 .info-card.small:nth-child(4){
 
     margin: 20px 20px 0;
@@ -285,18 +311,21 @@ header{
 
 .img-phone{
 
+    width: 60%;
     margin-left: 20px;
+    padding-top: 40px;
 }
 
 }
 
 @media screen and (min-width:992px) {
 
-    .container{
-
-        min-width:100%;
+    
+    .header,
+    .info-app{
+        width: 70%;
+        margin: 0 auto 60px;
     }
-
     .col.desktop-nav{
 
         display: block;
@@ -322,5 +351,40 @@ header{
 
         align-self: flex-end;
     }
+    
+    .planning{
+
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+
+    .planning .top{
+
+        width: 50%;
+        
+    }
+
+    .planning .bottom{
+
+        width: 50%;
+        align-self: flex-end;
+        
+    }
+
+    .planning .bottom img{
+
+        width: 150px;
+        margin-top :10px;
+    }
+
+    .planning .bottom h3,
+    .planning .top h2{
+
+        font-size: 1.5rem;
+        
+    }
+
     
 }
