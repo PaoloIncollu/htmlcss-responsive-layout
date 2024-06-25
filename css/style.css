@@ -19,7 +19,23 @@ img{
 
 /*Text property*/
 
-#text-black{
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+
+    line-height: 2rem;
+
+}
+
+.text-underline{
+
+    text-decoration: underline;
+
+}
+.text-black{
 
     color: black;
 }
@@ -46,10 +62,7 @@ img{
     text-align: center;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-}
+
 
 /*Background color*/
 
@@ -108,12 +121,6 @@ a{
 
 /*Header*/
 
-header{
-
-    max-width: 100%;
-
-}
-
 .header{
 
     width: 90%;
@@ -128,8 +135,8 @@ header{
     justify-content: space-between;
     align-items: center;
     
-
 }
+
 .col.desktop-nav ul{
 
     display: flex;
@@ -209,11 +216,12 @@ header{
     
     margin-top: 100px;
     padding-bottom: 70px;
+
 }
 .planning .top{
 
     padding: 40px 30px;
-    color: white;
+    
 
 }
 
@@ -239,15 +247,12 @@ header{
 .planning .top p
 {
 
-    line-height: 2rem;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .planning .bottom{
 
-    
-    background-color: white;
     margin: 30px;
     border-radius: 30px;
     padding: 20px 0;
@@ -261,7 +266,6 @@ header{
 
 .planning .bottom p{
 
-    line-height: 2rem;
     padding: 20px 20px;
     font-size: 1.2rem;
     
@@ -269,19 +273,19 @@ header{
 
 #bt-circle {
 
+    position: relative;
+    width: translate(40px (-50% -50%));
+    height: translate(40px (-50% -50%));
+    right: 50%;
+    left: 50%;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: 0 50%;
+
     }
 
 #bt-circle a{
 
-    color: black;
-    width: 40px;
-    height: 40px;
     vertical-align: middle;
-    line-height: 40px;
+    line-height: translate(40px (-50% -50%));
     
 }
 
@@ -298,10 +302,9 @@ header{
 .testimonials h3{
 
     font-size: 2rem;
-    color:#9792E4 ;
     padding: 20px 0;
-}
 
+}
 
 
 .card-testimonial{
@@ -316,35 +319,26 @@ header{
 }
 .photo-test img{
 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 50%;
     margin: 0 0 20px;
     
 }
 
-.card-testimonial .info-test p{
-
-    color: white;
-    line-height: 2rem;
-    
-
-}
-
 .card-testimonial .info-test h4{
 
-    color: white;
     padding: 20px 0;
     
 }
+
 
 /*Section Benefits*/
 
 
 .benefits-container > h2{
 
-    color: white;
-    text-align: center;
     padding: 40px 0;
     font-size: 2rem;
     margin: 10px;
@@ -360,7 +354,7 @@ header{
 .card-benefits{
 
     width: 100%;
-    background-color: white;
+    
     padding: 40px 20px;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -369,15 +363,12 @@ header{
 
 .card-benefits h2{
 
-    color: #9792E4;
     font-size: 3rem;
-    
     
 }
 
 .card-benefits h3{
 
-    color: #9792E4;
     margin: 20px 0;
 }
 
@@ -407,14 +398,13 @@ header{
 
 .about-us .top h2{
 
-    color: #9792E4;
+    
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
 .about-us .top p{
 
-    line-height: 2rem;
     margin-bottom: 30px;
 }
 
@@ -424,17 +414,34 @@ header{
 
 }
 
-.about-us .bottom img{
+.about-img{
+
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+}
+
+.about-img i{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+
+}
+
+.about-us .bottom .about-img img{
 
     width: 150px;
     height: 150px;
+    object-fit: cover;
     border-radius: 50%;
     
 }
 
 .about-us .bottom h4{
 
-    color: #9792E4;
     line-height: 2rem;
     font-size: 1.5rem;
     margin: 20px 0;
@@ -756,6 +763,6 @@ header{
     .footer-bottom{
 
         width: 30%;
-        
+
     }
 }
