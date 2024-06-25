@@ -156,9 +156,10 @@ header{
     font-weight: bold;
 }
 
-.img-phone{
+.img-phone img{
 
-    width: 80%;
+    width: 200px;
+    min-height: 250px;
     margin: 0 auto;
 }
 
@@ -369,11 +370,12 @@ header{
     
 }
 
-.img-phone{
+.img-phone img{
 
-    width: 60%;
-    margin-left: 20px;
-    padding-top: 40px;
+    width: 200px;
+    min-height: 250px;
+    margin: 0 20px;
+    
 }
 
 .card-testimonial{
@@ -430,6 +432,13 @@ header{
     .img-phone{
 
         align-self: flex-end;
+        
+    }
+
+    .img-phone img{
+
+        width: 200px;
+        min-height: 250px;
     }
     
     .planning{
