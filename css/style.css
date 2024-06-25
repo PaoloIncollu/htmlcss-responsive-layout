@@ -28,7 +28,7 @@ a{
     display: inline-block;
     padding: 4px 8px;
     border-radius: 20px;
-
+    text-align: center;
 }
 .bt-white{
 
@@ -48,6 +48,7 @@ a{
 
     background-color: #9792E4;
     color: white;
+    padding: 10px 40px;
 }
 
 
@@ -242,16 +243,19 @@ header{
 
 #bt-circle {
 
-    margin:0 50%;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
-    
+    margin: 0 50%;
     }
 
 #bt-circle a{
 
     color: black;
-    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 40px;
     
 }
 
@@ -259,8 +263,8 @@ header{
 
 .testimonials{
 
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 60px auto;
     padding: 20px 0;
     
 }
@@ -306,6 +310,56 @@ header{
     color: white;
     padding: 20px 0;
     
+}
+
+/*Section Benefits*/
+
+
+.benefits-container > h2{
+
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2rem;
+    margin: 10px;
+}
+.benefits{
+
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-benefits{
+
+    width: 100%;
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+}
+
+.card-benefits h2{
+
+    color: #9792E4;
+    font-size: 3rem;
+    
+    
+}
+
+.card-benefits h3{
+
+    color: #9792E4;
+    margin: 20px 0;
+}
+
+.card-benefits p {
+
+    color: grey;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
 }
 
 
@@ -398,6 +452,22 @@ header{
     text-align: left;
     padding-left: 40px;
 }
+
+.card-benefits{
+
+    width: calc((100% / 2) - 20px);
+}
+
+.card-benefits:nth-child(odd){
+
+    margin-right: 10px;
+}
+
+.card-benefits:nth-child(even){
+
+    margin-left: 10px;
+}
+
 }
 
 @media screen and (min-width:992px) {
@@ -480,5 +550,35 @@ header{
         width: 70%;
     }
 
+    .benefits{
+
+        width: 70%;
+        
+    }
+    .card-benefits{
+
+        width: calc((100% / 3) - 20px);
+    }
+    
+    .card-benefits:nth-child(odd){
+
+        margin-right: 0;
+    }
+    
+    .card-benefits:nth-child(even){
+    
+        margin-left: 0;
+    }
+   
+    .card-benefits:nth-child(2),
+    .card-benefits:nth-child(5){
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+  
+    
+    
     
 }
