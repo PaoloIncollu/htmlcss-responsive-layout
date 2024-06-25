@@ -362,6 +362,57 @@ header{
     margin-bottom: 30px;
 }
 
+/*Section about us*/
+
+.about-us{
+
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about-us .top{
+
+    width: 100%;
+
+}
+
+.about-us .top h2{
+
+    color: #9792E4;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.about-us .top p{
+
+    line-height: 2rem;
+    margin-bottom: 30px;
+}
+
+.about-us .bottom{
+
+    width: 100%;
+
+}
+
+.about-us .bottom img{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.about-us .bottom h4{
+
+    color: #9792E4;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
 
 /*Footer*/
 
@@ -468,6 +519,30 @@ header{
     margin-left: 10px;
 }
 
+.about-us .top{
+
+    width: calc(60% - 40px);
+    margin-right: 40px;
+
+}
+
+.about-us .top h2{
+
+    font-size: 4rem;
+}
+
+.about-us .bottom{
+
+    width: calc(40% - 40px);
+    margin-left: 40px;
+
+}
+
+.about-us .bottom img{
+
+    width: 200px;
+    height: 200px;
+}
 }
 
 @media screen and (min-width:992px) {
@@ -577,7 +652,10 @@ header{
         margin-right: 20px;
     }
 
-  
+
+    .about-us{
+        width: 70%;
+    }
     
     
     
