@@ -11,46 +11,13 @@
 /*General*/
 
 
-
 img{
 
     max-width: 100%;
     display: block;
 }
 
-a{
-
-    color: white;
-    text-decoration: none;
-}
-.button{
-
-    display: inline-block;
-    padding: 4px 8px;
-    border-radius: 20px;
-    text-align: center;
-}
-.bt-white{
-
-    background-color: white;
-    
-}
-
-.bt-blue{
-
-    background-color:#0084FD ;
-    margin-bottom: 20px;
-    padding: 10px 40px;
-    font-weight: bold;
-}
-
-.bt-violet{
-
-    background-color: #9792E4;
-    color: white;
-    padding: 10px 40px;
-}
-
+/*Text property*/
 
 #text-black{
 
@@ -62,18 +29,89 @@ a{
    color:#0084FD; 
 }
 
+.text-white{
+
+    color: white;
+
+}
+
+.text-violet{
+
+    color: #9792E4;
+
+}
+
 .text-center{
 
     text-align: center;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Background color*/
+
+.bg-blue{
+
+    background-color:#0084FD ;
+
+}
+
+.bg-light-blue{
+
+    background-color: #B5DDFF;
+
+}
+
+.bg-white{
+
+    background-color: white;
+}
+
+.bg-violet{
+
+    background-color: #9792E4;
+
+}
+
+.bg-grey{
+
+    background-color: #333333;
+}
+
+/*Button*/
+
+.button{
+
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.bt-small{
+
+    padding: 4px 8px;
+
+}
+
+.bt-big{
+
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+
+
 
 
 /*Header*/
 
 header{
 
-    background-color: #0084FD;
     max-width: 100%;
+
 }
 
 .header{
@@ -105,13 +143,6 @@ header{
     
 }
 
-.col.desktop-nav ul li,
-.col.mobile-nav
-{
-
-    color: white;
-
-}
 .desktop-nav{
 
     display: none;
@@ -138,7 +169,6 @@ header{
 .info-card{
 
     border-radius: 20px;
-    background-color: #B5DDFF;
     padding: 20px 20px 0;
     margin-top: 20px;
 
@@ -161,7 +191,8 @@ header{
 
     width: 200px;
     min-height: 250px;
-    margin: 0 auto;
+    margin:0 auto;
+    padding-top: 20px;
 }
 
 .icon-info{
@@ -172,11 +203,6 @@ header{
 
 /*Section planning*/
 
-.bg-violet{
-
-    
-    background-color: #9792E4;
-}
 
 .planning{
 
@@ -416,6 +442,57 @@ header{
 
 /*Footer*/
 
+/*top*/
+
+.footer-top{
+    
+    width: 90%;
+    margin: 60px auto 0;
+    padding: 60px 20px;
+
+}
+
+.footer-top > *{
+
+    margin: 30px 0;
+}
+
+.footer-top h4{
+
+    font-size: 1.5rem;
+}
+
+.footer-top h3{
+
+    font-size: 2rem;
+}
+
+.footer-top h2{
+
+    font-size: 3rem;
+    color: orange;
+}
+
+.footer-top p{
+
+    line-height: 2rem;
+
+}
+
+/*Footer-bottom*/
+
+.footer-bottom{
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.footer-bottom p{
+
+    margin-bottom: 40px;
+}
+
 /*Responsive*/
 
 @media screen and (min-width:576px) {
@@ -543,6 +620,18 @@ header{
     width: 200px;
     height: 200px;
 }
+
+.footer-top{
+
+    width: 70%;
+
+}
+
+.footer-bottom{
+
+    width: 50%;
+}
+
 }
 
 @media screen and (min-width:992px) {
@@ -657,6 +746,16 @@ header{
         width: 70%;
     }
     
+    .footer-top{
+
+        width: 40%;
+
+    }
     
-    
+
+    .footer-bottom{
+
+        width: 30%;
+        
+    }
 }
